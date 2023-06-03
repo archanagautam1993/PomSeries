@@ -1,5 +1,9 @@
 package com.qa.opencart.pages;
 
 public class CartPage {
-	String name = "cart";
+	static String name = "cart";
+	public static void main(String[] args) {
+		System.out.println(name);
+	}
+	
 }
