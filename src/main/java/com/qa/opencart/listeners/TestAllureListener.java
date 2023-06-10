@@ -1,5 +1,4 @@
 package com.qa.opencart.listeners;
-
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -8,9 +7,13 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import org.testng.ITestListener;
+
+
+import com.qa.opencart.factory.DriverFactory;
+
 
 public class TestAllureListener implements   ITestListener {
+
 	private static String getTestMethodName(ITestResult iTestResult) {
 		return iTestResult.getMethod().getConstructorOrMethod().getName();
 	}
