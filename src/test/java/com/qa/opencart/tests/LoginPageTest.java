@@ -27,8 +27,9 @@ public class LoginPageTest extends BaseTest {
 	@Test
 	public void loginTest() {
 		//accPage = loginPage.doLogin("janautomation@gmail.com", "Selenium@12345");
-		//accPage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
-		accPage = loginPage.doLogin(prop.getProperty("username"), System.getProperty("password"));//Assert.assertTrue(accPage.isLogoutLinkExist());
+		accPage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
+		//Assert.assertTrue(accPage.isLogoutLinkExist());
+		//accPage = loginPage.doLogin(prop.getProperty("username"), System.getProperty("password"));//Assert.assertTrue(accPage.isLogoutLinkExist());
 		//Assert.assertTrue(accPage.getAccPageTitle().equals("My Account"));
 	}
 
